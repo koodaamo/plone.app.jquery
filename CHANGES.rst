@@ -4,7 +4,8 @@ Changelog
 1.9.1.3 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Add compatibility profile to include both minified jQuery and minified
+  migrate plugin to support code that needs older jQuery versions [petri]
 
 
 1.9.1.2 (2014-09-23)

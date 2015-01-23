@@ -20,6 +20,11 @@
         />
 
     <resource
+        name="jquery-migrate.min.js"
+        file="jquery-migrate-1.2.1.min.js"
+        />
+
+    <resource
         name="jquery.min.map"
         file="jquery.min.map"
         />
@@ -38,6 +43,15 @@
         title="Plone jQuery Development Profile"
         directory="profiles/development"
         description="Installs the jQuery migrate plugin for easier transition to jQuery 1.9 and up."
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        for="Products.CMFCore.interfaces.ISiteRoot"
+        />
+
+    <genericsetup:registerProfile
+        name="compatibility"
+        title="Plone jQuery Backwards Compatibility Profile"
+        directory="profiles/compatibility"
+        description="Installs the (minified) jQuery migrate plugin for easier transition to jQuery 1.9 and up."
         provides="Products.GenericSetup.interfaces.EXTENSION"
         for="Products.CMFCore.interfaces.ISiteRoot"
         />
